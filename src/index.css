@@ -1,0 +1,202 @@
+/* Basic reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.dashboard-title {
+  color: #333;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Task Form Styles */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.task-form .input-field {
+  flex: 1;
+}
+
+.task-form .select-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Task List Styles */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.task-status {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.task-permission {
+  color: #6c757d;
+}
+
+/* Shared List Styles */
+.shared-list {
+  margin-top: 40px;
+}
+
+.section-title {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Offline Indicator Styles */
+.offline-indicator {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+  }
+
+  .task-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+.board {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.task-card {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.task-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
